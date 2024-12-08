@@ -1,0 +1,263 @@
+Crate {
+    attrs: [],
+    items: [
+        Item {
+            attrs: [
+                Attribute {
+                    kind: Normal(
+                        NormalAttr {
+                            item: AttrItem {
+                                unsafety: Default,
+                                path: Path {
+                                    span: no-location (#1),
+                                    segments: [
+                                        PathSegment {
+                                            ident: prelude_import#1,
+                                            id: NodeId(2),
+                                            args: None,
+                                        },
+                                    ],
+                                    tokens: None,
+                                },
+                                args: Empty,
+                                tokens: None,
+                            },
+                            tokens: None,
+                        },
+                    ),
+                    id: AttrId(1),
+                    style: Outer,
+                    span: no-location (#1),
+                },
+            ],
+            id: NodeId(1),
+            span: no-location (#1),
+            vis: Visibility {
+                kind: Inherited,
+                span: no-location (#1),
+                tokens: None,
+            },
+            ident: #0,
+            kind: Use(
+                UseTree {
+                    prefix: Path {
+                        span: no-location (#1),
+                        segments: [
+                            PathSegment {
+                                ident: std#1,
+                                id: NodeId(3),
+                                args: None,
+                            },
+                            PathSegment {
+                                ident: prelude#1,
+                                id: NodeId(4),
+                                args: None,
+                            },
+                            PathSegment {
+                                ident: rust_2021#1,
+                                id: NodeId(5),
+                                args: None,
+                            },
+                        ],
+                        tokens: None,
+                    },
+                    kind: Glob,
+                    span: no-location (#1),
+                },
+            ),
+            tokens: None,
+        },
+        Item {
+            attrs: [
+                Attribute {
+                    kind: Normal(
+                        NormalAttr {
+                            item: AttrItem {
+                                unsafety: Default,
+                                path: Path {
+                                    span: no-location (#1),
+                                    segments: [
+                                        PathSegment {
+                                            ident: macro_use#1,
+                                            id: NodeId(7),
+                                            args: None,
+                                        },
+                                    ],
+                                    tokens: None,
+                                },
+                                args: Empty,
+                                tokens: None,
+                            },
+                            tokens: None,
+                        },
+                    ),
+                    id: AttrId(0),
+                    style: Outer,
+                    span: no-location (#1),
+                },
+            ],
+            id: NodeId(6),
+            span: no-location (#1),
+            vis: Visibility {
+                kind: Inherited,
+                span: no-location (#1),
+                tokens: None,
+            },
+            ident: std#1,
+            kind: ExternCrate(
+                None,
+            ),
+            tokens: None,
+        },
+        Item {
+            attrs: [],
+            id: NodeId(8),
+            span: main.rs:1:1: 10:2 (#0),
+            vis: Visibility {
+                kind: Inherited,
+                span: no-location (#0),
+                tokens: None,
+            },
+            ident: main#0,
+            kind: Fn(
+                Fn {
+                    defaultness: Final,
+                    generics: Generics {
+                        params: [],
+                        where_clause: WhereClause {
+                            has_where_token: false,
+                            predicates: [],
+                            span: main.rs:1:10: 1:10 (#0),
+                        },
+                        span: main.rs:1:8: 1:8 (#0),
+                    },
+                    sig: FnSig {
+                        header: FnHeader {
+                            safety: Default,
+                            coroutine_kind: None,
+                            constness: No,
+                            ext: None,
+                        },
+                        decl: FnDecl {
+                            inputs: [],
+                            output: Default(
+                                main.rs:1:10: 1:10 (#0),
+                            ),
+                        },
+                        span: main.rs:1:1: 1:10 (#0),
+                    },
+                    body: Some(
+                        Block {
+                            stmts: [
+                                Stmt {
+                                    id: NodeId(10),
+                                    kind: Semi(
+                                        Expr {
+                                            id: NodeId(11),
+                                            kind: Block(
+                                                Block {
+                                                    stmts: [
+                                                        Stmt {
+                                                            id: NodeId(13),
+                                                            kind: Semi(
+                                                                Expr {
+                                                                    id: NodeId(14),
+                                                                    kind: Call(
+                                                                        Expr {
+                                                                            id: NodeId(15),
+                                                                            kind: Path(
+                                                                                None,
+                                                                                Path {
+                                                                                    span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#4),
+                                                                                    segments: [
+                                                                                        PathSegment {
+                                                                                            ident: $crate#4,
+                                                                                            id: NodeId(16),
+                                                                                            args: None,
+                                                                                        },
+                                                                                        PathSegment {
+                                                                                            ident: io#4,
+                                                                                            id: NodeId(17),
+                                                                                            args: None,
+                                                                                        },
+                                                                                        PathSegment {
+                                                                                            ident: _print#4,
+                                                                                            id: NodeId(18),
+                                                                                            args: None,
+                                                                                        },
+                                                                                    ],
+                                                                                    tokens: None,
+                                                                                },
+                                                                            ),
+                                                                            span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#4),
+                                                                            attrs: [],
+                                                                            tokens: None,
+                                                                        },
+                                                                        [
+                                                                            Expr {
+                                                                                id: NodeId(19),
+                                                                                kind: FormatArgs(
+                                                                                    FormatArgs {
+                                                                                        span: main.rs:2:14: 2:29 (#0),
+                                                                                        template: [
+                                                                                            Literal(
+                                                                                                "Hello, world!\n",
+                                                                                            ),
+                                                                                        ],
+                                                                                        arguments: FormatArguments {
+                                                                                            arguments: [],
+                                                                                            num_unnamed_args: 0,
+                                                                                            num_explicit_args: 0,
+                                                                                            names: {},
+                                                                                        },
+                                                                                    },
+                                                                                ),
+                                                                                span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#5),
+                                                                                attrs: [],
+                                                                                tokens: None,
+                                                                            },
+                                                                        ],
+                                                                    ),
+                                                                    span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#4),
+                                                                    attrs: [],
+                                                                    tokens: None,
+                                                                },
+                                                            ),
+                                                            span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:63 (#4),
+                                                        },
+                                                    ],
+                                                    id: NodeId(12),
+                                                    rules: Default,
+                                                    span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                                    tokens: None,
+                                                    could_be_bare_literal: false,
+                                                },
+                                                None,
+                                            ),
+                                            span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                            attrs: [],
+                                            tokens: None,
+                                        },
+                                    ),
+                                    span: /home/hieucien/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                },
+                            ],
+                            id: NodeId(9),
+                            rules: Default,
+                            span: main.rs:1:11: 10:2 (#0),
+                            tokens: None,
+                            could_be_bare_literal: false,
+                        },
+                    ),
+                },
+            ),
+            tokens: None,
+        },
+    ],
+    spans: ModSpans {
+        inner_span: main.rs:1:1: 10:2 (#0),
+        inject_use_span: no-location (#0),
+    },
+    id: NodeId(0),
+    is_placeholder: false,
+}

@@ -150,4 +150,4 @@ attributes #4 = { nonlazybind "target-cpu"="x86-64" }
 !1 = !{i32 7, !"PIE Level", i32 2}
 !2 = !{i32 2, !"RtLibUseGOT", i32 1}
 !3 = !{!"rustc version 1.82.0 (f6e511eec 2024-10-15)"}
-!4 = !{i32 1197495}
+!4 = !{i32 1423474}
